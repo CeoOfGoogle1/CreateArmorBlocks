@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createarmorblocks:block/hard_armor_block"
+    }
+  }
+}

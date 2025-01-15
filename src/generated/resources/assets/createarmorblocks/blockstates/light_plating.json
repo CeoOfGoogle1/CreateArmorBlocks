@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createarmorblocks:block/light_plating"
+    }
+  }
+}
