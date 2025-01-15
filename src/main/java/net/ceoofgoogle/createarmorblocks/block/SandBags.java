@@ -8,11 +8,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class TankObstacle extends HorizontalDirectionalBlock {
+public class SandBags extends HorizontalDirectionalBlock {
 
-    public static final VoxelShape NORTH_SHAPE = Block.box(0, 0, 0, 16, 32, 16);
+    public static final VoxelShape NORTH_SHAPE = Block.box(0, 0, 0, 16, 16, 8);
 
-    public TankObstacle(Properties pProperties) {
+    public SandBags(Properties pProperties) {
         super(pProperties);
         this.registerDefaultState(this.defaultBlockState()
                 .setValue(FACING, Direction.NORTH));
