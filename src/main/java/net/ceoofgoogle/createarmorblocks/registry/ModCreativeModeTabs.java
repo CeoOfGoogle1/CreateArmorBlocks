@@ -9,10 +9,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-
+import com.simibubi.create.foundation.data.CreateRegistrate;
 import java.util.function.Supplier;
 
-import static net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod.REGISTRATE;
+
+import static com.simibubi.create.Create.REGISTRATE;
+
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -43,6 +45,7 @@ public class ModCreativeModeTabs {
         pOutput.accept(ModBlocks.LIGHT_PLATING);
         pOutput.accept(ModBlocks.SAND_BAGS);
         pOutput.accept(ModBlocks.TANK_OBSTACLE);
+        pOutput.accept(ModBlocks.ARMORED_TRAPDOOR);
     }
 
 

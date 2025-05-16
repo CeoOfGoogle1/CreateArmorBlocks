@@ -1,5 +1,6 @@
 package net.ceoofgoogle.createarmorblocks.registry;
 
+import com.simibubi.create.content.decoration.TrainTrapdoorBlock;
 import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.BuilderTransformers;
@@ -11,10 +12,14 @@ import net.ceoofgoogle.createarmorblocks.block.LightPlating;
 import net.ceoofgoogle.createarmorblocks.block.SandBags;
 import net.ceoofgoogle.createarmorblocks.block.TankObstacle;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
+
 public class ModBlocks {
+
 
     public static final BlockEntry<Block> ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
@@ -64,12 +69,18 @@ public class ModBlocks {
     public static final BlockEntry<BarbedWire> BARBED_WIRE = CreateArmorBlocksMod.REGISTRATE.block("barbed_wire", BarbedWire::new)
             .initialProperties(SharedProperties::softMetal)
             .properties(p -> p.strength(50.0F, 1200.0F)
+                    .noOcclusion()
+                    .noCollission()
+                    //.speedFactor(0.5f)
+                    .sound(SoundType.CHAIN)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
-                    .sound(SoundType.NETHERITE_BLOCK))
+                    .sound(SoundType.CHAIN))
+
             .blockstate((c, p) -> p.horizontalBlock(c.getEntry(), AssetLookup.standardModel(c, p)))
             .simpleItem()
             .register();
+
 
     public static final BlockEntry<SandBags> SAND_BAGS = CreateArmorBlocksMod.REGISTRATE.block("sand_bags", SandBags::new)
             .initialProperties(SharedProperties::softMetal)
@@ -100,6 +111,16 @@ public class ModBlocks {
             .transform(BuilderTransformers.casing(() -> LightPlating.LIGHT_PLATING))
             .simpleItem()
             .register();
+    public static final BlockEntry<TrainTrapdoorBlock> ARMORED_TRAPDOOR = CreateArmorBlocksMod.REGISTRATE.block("armoredtrapdoor", TrainTrapdoorBlock::new)
+            .properties(p -> BlockBehaviour.Properties.copy(Blocks.IRON_TRAPDOOR)
+                            .requiresCorrectToolForDrops()
+                            .mapColor(MapColor.COLOR_GRAY)
+                            .sound(SoundType.METAL))
+            .simpleItem()
+            .register();
+
+
+
 
     public static void register(){
         CreateArmorBlocksMod.getLogger().info("Registering Blocks");

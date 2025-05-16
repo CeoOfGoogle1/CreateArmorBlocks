@@ -10,12 +10,17 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+import static com.simibubi.create.Create.REGISTRATE;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreateArmorBlocksMod.MODID)
 public class CreateArmorBlocksMod {
     public static final String MODID = "createarmorblocks";
     private static final Logger LOGGER = LogUtils.getLogger();
+
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MODID);
+
+
 
     public CreateArmorBlocksMod() {
         getLogger().info("Initializing Create ArmorBlocks!");

@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "barbed_wirie",
-		"particle": "barbed_wirie"
+		"0": "createarmorblocks:block/barbed_wire",
+		"particle": "createarmorblocks:block/barbed_wire"
 	},
 	"elements": [
 		{
@@ -114,5 +114,6 @@
 		"fixed": {
 			"scale": [0.5, 0.5, 0.5]
 		}
-	}
+	},
+	"render_type": "cutout"
 }
