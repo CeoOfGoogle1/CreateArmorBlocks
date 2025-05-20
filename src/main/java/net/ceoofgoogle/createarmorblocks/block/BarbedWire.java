@@ -18,8 +18,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class BarbedWire extends HorizontalDirectionalBlock {
 
-    public static final VoxelShape NORTH_SHAPE = Block.box(0, 0, 0, 16, 15, 16);
-
     public BarbedWire(Properties pProperties) {
         super(pProperties);
         this.registerDefaultState(this.defaultBlockState()

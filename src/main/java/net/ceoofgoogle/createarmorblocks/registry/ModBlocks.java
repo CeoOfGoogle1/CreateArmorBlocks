@@ -9,9 +9,10 @@ import net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod;
 import net.ceoofgoogle.createarmorblocks.block.BarbedWire;
 import net.ceoofgoogle.createarmorblocks.block.LightPlating;
 import net.ceoofgoogle.createarmorblocks.block.SandBags;
-import net.ceoofgoogle.createarmorblocks.block.TankObstacle;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
 public class ModBlocks {
@@ -61,12 +62,15 @@ public class ModBlocks {
             .simpleItem()
             .register();
 
+    @SuppressWarnings("removal")
     public static final BlockEntry<BarbedWire> BARBED_WIRE = CreateArmorBlocksMod.REGISTRATE.block("barbed_wire", BarbedWire::new)
             .initialProperties(SharedProperties::softMetal)
             .properties(p -> p.strength(50.0F, 1200.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
+            .properties(BlockBehaviour.Properties::noOcclusion)
+            .addLayer(() -> RenderType::cutoutMipped)
             .blockstate((c, p) -> p.horizontalBlock(c.getEntry(), AssetLookup.standardModel(c, p)))
             .simpleItem()
             .register();
@@ -77,16 +81,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.SAND))
-            .blockstate((c, p) -> p.horizontalBlock(c.getEntry(), AssetLookup.standardModel(c, p)))
-            .simpleItem()
-            .register();
-
-    public static final BlockEntry<TankObstacle> TANK_OBSTACLE = CreateArmorBlocksMod.REGISTRATE.block("tank_obstacle", TankObstacle::new)
-            .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
-                    .requiresCorrectToolForDrops()
-                    .mapColor(MapColor.COLOR_GRAY)
-                    .sound(SoundType.NETHERITE_BLOCK))
+            .properties(BlockBehaviour.Properties::noOcclusion)
             .blockstate((c, p) -> p.horizontalBlock(c.getEntry(), AssetLookup.standardModel(c, p)))
             .simpleItem()
             .register();
