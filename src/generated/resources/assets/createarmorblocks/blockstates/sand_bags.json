@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "createarmorblocks:block/sand_bags",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "createarmorblocks:block/sand_bags"
+    },
+    "facing=south": {
+      "model": "createarmorblocks:block/sand_bags",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "createarmorblocks:block/sand_bags",
+      "y": 270
+    }
+  }
+}

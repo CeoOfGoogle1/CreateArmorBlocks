@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "createarmorblocks:block/barbed_wire",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "createarmorblocks:block/barbed_wire"
+    },
+    "facing=south": {
+      "model": "createarmorblocks:block/barbed_wire",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "createarmorblocks:block/barbed_wire",
+      "y": 270
+    }
+  }
+}
