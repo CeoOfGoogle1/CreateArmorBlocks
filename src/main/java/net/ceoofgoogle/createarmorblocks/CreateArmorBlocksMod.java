@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.ceoofgoogle.createarmorblocks.registry.ModBlocks;
 import net.ceoofgoogle.createarmorblocks.registry.ModCreativeModeTabs;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -35,4 +36,7 @@ public class CreateArmorBlocksMod {
         return LOGGER;
     }
 
+    public static ResourceLocation asResource(String path) {
+        return new ResourceLocation(MODID, path);
+    }
 }

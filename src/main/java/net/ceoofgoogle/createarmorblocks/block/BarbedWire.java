@@ -18,8 +18,12 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -28,9 +32,9 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+
+import javax.annotation.Nullable;
+import java.util.*;
 
 
 public class BarbedWire extends HorizontalDirectionalBlock {
@@ -38,12 +42,24 @@ public class BarbedWire extends HorizontalDirectionalBlock {
         public static final Map<UUID, BlockPos> breakingPlayers = new HashMap<>();
     }
     public static final VoxelShape NORTH_SHAPE = Block.box(0, 0, 0, 16, 15, 16);
+    @Override
+    public void playerDestroy(Level level, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack tool) {
+        if (!level.isClientSide) {
+          //debug  System.out.println("Destroyed BarbedWire with: " + tool);
+            if (tool.getItem() instanceof ShearsItem) {
+                //debug      System.out.println("Dropping BarbedWire!");
+                popResource(level, pos, new ItemStack(this));
+            }
+        }
+        super.playerDestroy(level, player, pos, state, blockEntity, tool);
+    }
 
     public BarbedWire(Properties pProperties) {
         super(pProperties);
         this.registerDefaultState(this.defaultBlockState()
                 .setValue(FACING, Direction.NORTH));
     }
+
     @Mod.EventBusSubscriber(modid = CreateArmorBlocksMod.MODID)
     public class BarbedWireEvents {
         @SubscribeEvent
@@ -79,7 +95,6 @@ public class BarbedWire extends HorizontalDirectionalBlock {
                 .setValue(FACING, context.getHorizontalDirection()
                         .getOpposite());
     }
-
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
@@ -95,7 +110,7 @@ public class BarbedWire extends HorizontalDirectionalBlock {
         pEntity.hurt(pLevel.damageSources().cactus(), 1.0F);
     }
     //@Override
-    @Override
+    /*@Override
     public void attack(BlockState state, Level world, BlockPos pos, Player player) {
         if (!world.isClientSide) {
             ItemStack held = player.getMainHandItem();
@@ -105,14 +120,42 @@ public class BarbedWire extends HorizontalDirectionalBlock {
         }
         super.attack(state, world, pos, player);
     }
+    */
+    @Override
+    public void attack(BlockState state, Level world, BlockPos pos, Player player) {
+        if (!world.isClientSide) {
+            ItemStack held = player.getMainHandItem();
+            if (held.isEmpty()) {
+                BarbedWireHandler.breakingPlayers.put(player.getUUID(), pos.immutable());
+            }
+        }
+        super.attack(state, world, pos, player);
+    }
+
+
     @Override
     public float getDestroyProgress(BlockState state, Player player, BlockGetter world, BlockPos pos) {
         ItemStack item = player.getMainHandItem();
         if (item.is(Items.SHEARS)) return 0.05F; // ~3 seconds
         return 0.01F; // slow without shears
     }
+
+
     @Override
     public boolean propagatesSkylightDown(BlockState state, BlockGetter level, BlockPos pos) {
         return true;
     }
+   /* @Override
+    public void playerDestroy(Level level, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack tool) {
+        if (!level.isClientSide) {
+            if (tool.getItem() instanceof ShearsItem) {
+                popResource(level, pos, new ItemStack(this));
+            }
+            // No drop if not using shears
+        }
+        super.playerDestroy(level, player, pos, state, blockEntity, tool);
+    }
+
+    */
+
 }
