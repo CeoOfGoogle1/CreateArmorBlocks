@@ -1,13 +1,23 @@
 package net.ceoofgoogle.createarmorblocks.block;
 
-import com.simibubi.create.foundation.block.connected.AllCTTypes;
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.CTSpriteShifter;
+import com.simibubi.create.foundation.block.connected.*;
+import net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod;
 import net.minecraft.resources.ResourceLocation;
 
-public class LightPlating {
+import static com.simibubi.create.foundation.block.connected.CTSpriteShifter.getCT;
 
-    public static final CTSpriteShiftEntry LIGHT_PLATING = CTSpriteShifter.getCT(AllCTTypes.OMNIDIRECTIONAL, new ResourceLocation("createarmorblocks", "block/light_plating"),
-            new ResourceLocation("createarmorblocks", "block/light_plating_connected"));
+public  class LightPlating {
 
+    public static CTSpriteShiftEntry LIGHT_PLATING = omni("light_plating");
+
+    public static CTSpriteShiftEntry omni(String name) {
+        return getCT(AllCTTypes.OMNIDIRECTIONAL, name);
+    }
+    private static CTSpriteShiftEntry getCT(CTType type, String blockTextureName, String connectedTextureName) {
+        return CTSpriteShifter.getCT(type, CreateArmorBlocksMod.asResource("block/" + blockTextureName), CreateArmorBlocksMod.asResource("block/" + connectedTextureName + "_connected"));
+    }
+
+    private static CTSpriteShiftEntry getCT(CTType type, String blockTextureName) {
+        return getCT(type, blockTextureName, blockTextureName);
+    }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "createarmorblocks:block/armoredtrapdoor_open",
+  "textures": {
+    "texture": "createarmorblocks:block/armoredtrapdoor"
+  }
+}
