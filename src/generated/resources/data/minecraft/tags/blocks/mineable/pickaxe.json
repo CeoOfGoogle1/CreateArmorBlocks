@@ -6,6 +6,7 @@
     "createarmorblocks:armor_block",
     "createarmorblocks:era_armor_block",
     "createarmorblocks:hard_armor_block",
-    "createarmorblocks:old_armor_block"
+    "createarmorblocks:old_armor_block",
+    "createarmorblocks:armoredtrapdoor"
   ]
 }

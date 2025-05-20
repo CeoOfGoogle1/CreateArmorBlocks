@@ -1,8 +1,11 @@
 package net.ceoofgoogle.createarmorblocks.registry;
 
+import com.simibubi.create.content.decoration.TrainTrapdoorBlock;
 import com.simibubi.create.content.decoration.encasing.CasingBlock;
+import com.simibubi.create.content.decoration.encasing.EncasedCTBehaviour;
 import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.BuilderTransformers;
+import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod;
@@ -11,9 +14,12 @@ import net.ceoofgoogle.createarmorblocks.block.LightPlating;
 import net.ceoofgoogle.createarmorblocks.block.SandBags;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+
+import static com.simibubi.create.foundation.data.CreateRegistrate.casingConnectivity;
 
 public class ModBlocks {
 
@@ -52,7 +58,6 @@ public class ModBlocks {
                     .sound(SoundType.NETHERITE_BLOCK))
             .simpleItem()
             .register();
-
     public static final BlockEntry<Block> OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
             .properties(p -> p.strength(50.0F, 1200.0F)
@@ -62,15 +67,15 @@ public class ModBlocks {
             .simpleItem()
             .register();
 
-    @SuppressWarnings("removal")
     public static final BlockEntry<BarbedWire> BARBED_WIRE = CreateArmorBlocksMod.REGISTRATE.block("barbed_wire", BarbedWire::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
-                    .requiresCorrectToolForDrops()
+            //.properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)
+                    .noOcclusion()
+                    .strength(50.0f, 1200.0f)
+                    .noCollission()
                     .mapColor(MapColor.COLOR_GRAY)
-                    .sound(SoundType.NETHERITE_BLOCK))
-            .properties(BlockBehaviour.Properties::noOcclusion)
-            .addLayer(() -> RenderType::cutoutMipped)
+                    .sound(SoundType.CHAIN))
             .blockstate((c, p) -> p.horizontalBlock(c.getEntry(), AssetLookup.standardModel(c, p)))
             .simpleItem()
             .register();
@@ -86,13 +91,22 @@ public class ModBlocks {
             .simpleItem()
             .register();
 
-    public static final BlockEntry<CasingBlock> LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("light_plating", CasingBlock::new)
-            .initialProperties(SharedProperties::softMetal)
+    public static final BlockEntry<Block> LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("light_plating", Block::new)
+            //  .initialProperties(SharedProperties::softMetal)
             .properties(p -> p.strength(50.0F, 1200.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
-            .transform(BuilderTransformers.casing(() -> LightPlating.LIGHT_PLATING))
+            .onRegister(CreateRegistrate.connectedTextures(() -> new EncasedCTBehaviour(LightPlating.LIGHT_PLATING)))
+            .onRegister(casingConnectivity((block, cc) -> cc.makeCasing(block, LightPlating.LIGHT_PLATING)))
+            .simpleItem()
+            .register();
+
+    public static final BlockEntry<TrainTrapdoorBlock> ARMORED_TRAPDOOR = CreateArmorBlocksMod.REGISTRATE.block("armoredtrapdoor", TrainTrapdoorBlock::new)
+            .properties(p -> BlockBehaviour.Properties.copy(Blocks.IRON_TRAPDOOR)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.COLOR_GRAY)
+                    .sound(SoundType.METAL))
             .simpleItem()
             .register();
 

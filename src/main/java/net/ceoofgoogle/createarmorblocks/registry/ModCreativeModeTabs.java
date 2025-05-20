@@ -42,6 +42,7 @@ public class ModCreativeModeTabs {
         pOutput.accept(ModBlocks.BARBED_WIRE);
         pOutput.accept(ModBlocks.LIGHT_PLATING);
         pOutput.accept(ModBlocks.SAND_BAGS);
+        pOutput.accept(ModBlocks.ARMORED_TRAPDOOR);
     }
 
 
