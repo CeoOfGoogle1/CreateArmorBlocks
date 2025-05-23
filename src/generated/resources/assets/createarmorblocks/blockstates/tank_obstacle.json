@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "createarmorblocks:block/tank_obstacle" },
+    "facing=east":  { "model": "createarmorblocks:block/tank_obstacle", "y": 90 },
+    "facing=south": { "model": "createarmorblocks:block/tank_obstacle", "y": 180 },
+    "facing=west":  { "model": "createarmorblocks:block/tank_obstacle", "y": 270 }
+  }
+}

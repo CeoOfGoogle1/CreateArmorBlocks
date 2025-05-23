@@ -12,14 +12,20 @@ import net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod;
 import net.ceoofgoogle.createarmorblocks.block.BarbedWire;
 import net.ceoofgoogle.createarmorblocks.block.LightPlating;
 import net.ceoofgoogle.createarmorblocks.block.SandBags;
+import net.ceoofgoogle.createarmorblocks.block.TankObstacle;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.data.models.model.ModelLocationUtils;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.client.model.generators.ModelFile.UncheckedModelFile;
 
 import static com.simibubi.create.foundation.data.CreateRegistrate.casingConnectivity;
+import static net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod.MODID;
 
 public class ModBlocks {
 
@@ -109,8 +115,21 @@ public class ModBlocks {
                     .sound(SoundType.METAL))
             .simpleItem()
             .register();
+    public static final BlockEntry<TankObstacle> TANK_OBSTACLE = CreateArmorBlocksMod.REGISTRATE.block("tank_obstacle", TankObstacle::new)
+            .initialProperties(SharedProperties::softMetal)
+            .properties(p -> p.strength(50.0F, 1200.0F)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.COLOR_GRAY)
+                    .noOcclusion()
+                    .sound(SoundType.NETHERITE_BLOCK))
+            .blockstate((c, p) -> p.horizontalBlock(c.getEntry(), AssetLookup.standardModel(c, p)))
+            .simpleItem()
+            .register();
 
     public static void register(){
         CreateArmorBlocksMod.getLogger().info("Registering Blocks");
+    }
+    public ResourceLocation modLoc(String name) {
+        return new ResourceLocation(MODID, name);
     }
 }
