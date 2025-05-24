@@ -1,28 +1,19 @@
 package net.ceoofgoogle.createarmorblocks.registry;
 
 import com.simibubi.create.content.decoration.TrainTrapdoorBlock;
-import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import com.simibubi.create.content.decoration.encasing.EncasedCTBehaviour;
 import com.simibubi.create.foundation.data.AssetLookup;
-import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod;
-import net.ceoofgoogle.createarmorblocks.block.BarbedWire;
-import net.ceoofgoogle.createarmorblocks.block.LightPlating;
-import net.ceoofgoogle.createarmorblocks.block.SandBags;
-import net.ceoofgoogle.createarmorblocks.block.TankObstacle;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.data.models.model.ModelLocationUtils;
+import net.ceoofgoogle.createarmorblocks.block.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraftforge.client.model.generators.ModelFile;
-import net.minecraftforge.client.model.generators.ModelFile.UncheckedModelFile;
 
 import static com.simibubi.create.foundation.data.CreateRegistrate.casingConnectivity;
 import static net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod.MODID;
@@ -110,10 +101,17 @@ public class ModBlocks {
 
     public static final BlockEntry<TrainTrapdoorBlock> ARMORED_TRAPDOOR = CreateArmorBlocksMod.REGISTRATE.block("armoredtrapdoor", TrainTrapdoorBlock::new)
             .properties(p -> BlockBehaviour.Properties.copy(Blocks.IRON_TRAPDOOR)
+                    .strength(50.0F, 1200.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.METAL))
             .simpleItem()
+            .register();
+    public static final BlockEntry<TankObstacleTop> TANK_OBSTACLE_TOP = CreateArmorBlocksMod.REGISTRATE.block("tank_obstacle_top", TankObstacleTop::new)
+            .initialProperties(SharedProperties::softMetal)
+            .properties(p -> p.strength(50.0F, 1200.0F)
+                    .requiresCorrectToolForDrops()
+                    .noOcclusion())
             .register();
     public static final BlockEntry<TankObstacle> TANK_OBSTACLE = CreateArmorBlocksMod.REGISTRATE.block("tank_obstacle", TankObstacle::new)
             .initialProperties(SharedProperties::softMetal)
@@ -125,6 +123,7 @@ public class ModBlocks {
             .blockstate((c, p) -> p.horizontalBlock(c.getEntry(), AssetLookup.standardModel(c, p)))
             .simpleItem()
             .register();
+
 
     public static void register(){
         CreateArmorBlocksMod.getLogger().info("Registering Blocks");

@@ -5,8 +5,7 @@
   "detect-cullable-faces": false,
   "ambientToFullbright": false,
   "textures": {
-    "texture0": "createarmorblocks:block/tank_obstacle",
-    "particle": "createarmorblocks:block/tank_obstacle"
+    "particle": "createarmorblocks:block/light_plating"
   },
   "elements": [
     {
@@ -18,9 +17,7 @@
         "north": {"uv": [0, 1, 1, 2], "texture": "#0"},
         "east": {"uv": [0, 0, 8, 1], "texture": "#0"},
         "south": {"uv": [0, 1, 1, 2], "texture": "#0"},
-        "west": {"uv": [0, 0, 8, 1], "texture": "#0"},
-        "up": {"uv": [8, 1, 0, 0], "rotation": 90, "texture": "#0"},
-        "down": {"uv": [0, 1, 8, 0], "rotation": 90, "texture": "#0"}
+        "west": {"uv": [0, 0, 8, 1], "texture": "#0"}
       }
     },
     {
@@ -32,9 +29,7 @@
         "north": {"uv": [0, 1, 1, 2], "texture": "#0"},
         "east": {"uv": [0, 0, 8, 1], "texture": "#0"},
         "south": {"uv": [0, 1, 1, 2], "texture": "#0"},
-        "west": {"uv": [0, 0, 8, 1], "texture": "#0"},
-        "up": {"uv": [8, 1, 0, 0], "rotation": 90, "texture": "#0"},
-        "down": {"uv": [0, 1, 8, 0], "rotation": 90, "texture": "#0"}
+        "west": {"uv": [0, 0, 8, 1], "texture": "#0"}
       }
     },
     {
@@ -46,9 +41,7 @@
         "north": {"uv": [0, 1, 1, 2], "texture": "#0"},
         "east": {"uv": [0, 0, 8, 1], "texture": "#0"},
         "south": {"uv": [0, 1, 1, 2], "texture": "#0"},
-        "west": {"uv": [0, 0, 8, 1], "texture": "#0"},
-        "up": {"uv": [8, 1, 0, 0], "rotation": 90, "texture": "#0"},
-        "down": {"uv": [0, 1, 8, 0], "rotation": 90, "texture": "#0"}
+        "west": {"uv": [0, 0, 8, 1], "texture": "#0"}
       }
     }
   ],

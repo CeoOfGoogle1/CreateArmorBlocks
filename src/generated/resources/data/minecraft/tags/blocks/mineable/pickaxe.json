@@ -8,6 +8,7 @@
     "createarmorblocks:hard_armor_block",
     "createarmorblocks:old_armor_block",
     "createarmorblocks:armoredtrapdoor",
-    "createarmorblocks:tank_obstacle"
+    "createarmorblocks:tank_obstacle",
+    "createarmorblocks:tank_obstacle_top"
   ]
 }

@@ -2,9 +2,7 @@ package net.ceoofgoogle.createarmorblocks.block;
 
 import com.simibubi.create.foundation.block.connected.*;
 import net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod;
-import net.minecraft.resources.ResourceLocation;
 
-import static com.simibubi.create.foundation.block.connected.CTSpriteShifter.getCT;
 
 public  class LightPlating {
 
