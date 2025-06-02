@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "createarmorblocks:block/plains_camo_heavy_armor_block"
+  }
+}

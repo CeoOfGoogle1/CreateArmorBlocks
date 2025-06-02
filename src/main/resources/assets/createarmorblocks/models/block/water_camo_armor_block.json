@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "createarmorblocks:block/water_camo_armor_block"
+  }
+}

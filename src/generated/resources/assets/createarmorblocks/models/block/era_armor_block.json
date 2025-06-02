@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "createarmorblocks:block/era_armor_block"
-  }
-}

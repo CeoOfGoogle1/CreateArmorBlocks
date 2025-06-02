@@ -5,7 +5,8 @@
   "detect-cullable-faces": false,
   "ambientToFullbright": false,
   "textures": {
-    "particle": "createarmorblocks:block/light_plating"
+    "0": "createarmorblocks:block/tank_obstacle",
+    "particle": "minecraft:block/anvil"
   },
   "elements": [
     {

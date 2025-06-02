@@ -1,0 +1,12 @@
+{
+  "values": [
+    "createarmorblocks:light_plating",
+    "createarmorblocks:heavy_armor_block",
+    "createarmorblocks:old_armor_block",
+    "createarmorblocks:armor_block",
+    "createarmorblocks:old_armor_block",
+    "createarmorblocks:armored_trapdoor",
+    "createarmorblocks:tank_obstacle",
+    "createarmorblocks:tank_obstacle_top"
+  ]
+}

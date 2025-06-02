@@ -1,0 +1,7 @@
+
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "createarmorblocks:block/savanna_camo_old_armor_block"
+  }
+}
