@@ -21,7 +21,6 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> ARMOR_CREATIVE_TAB = addTab("armor_block", "Create Armor Blocks",
             ModBlocks.ARMOR_BLOCK::asStack);
 
-
     public static RegistryObject<CreativeModeTab> addTab(String id, String name, Supplier<ItemStack> icon) {
         String itemGroupId = "itemGroup." + CreateArmorBlocksMod.MODID + "." + id;
         REGISTRATE.addRawLang(itemGroupId, name);
