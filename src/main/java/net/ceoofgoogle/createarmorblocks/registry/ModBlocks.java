@@ -22,7 +22,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -31,7 +31,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> DESERT_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("desert_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -40,7 +40,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> DIRT_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("dirt_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -49,7 +49,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> FOREST_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("forest_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -58,7 +58,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> MESA_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("mesa_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -67,7 +67,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> PLAINS_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("plains_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -76,7 +76,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> RED_DESERT_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("red_desert_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -85,7 +85,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SAVANNA_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("savanna_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -94,7 +94,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SKY_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("sky_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -103,7 +103,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SNOW_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("snow_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -112,7 +112,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> TAIGA_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("taiga_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -121,7 +121,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> WATER_CAMO_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("water_camo_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -130,7 +130,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -139,7 +139,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> DESERT_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("desert_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -148,7 +148,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> DIRT_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("dirt_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -157,7 +157,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> FOREST_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("forest_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -166,7 +166,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> MESA_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("mesa_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -175,7 +175,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> PLAINS_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("plains_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -184,7 +184,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> RED_DESERT_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("red_desert_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -193,7 +193,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SAVANNA_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("savanna_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -202,7 +202,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SKY_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("sky_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -211,7 +211,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SNOW_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("snow_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -220,7 +220,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> TAIGA_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("taiga_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -229,7 +229,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> WATER_CAMO_HEAVY_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("water_camo_heavy_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(50.0F, 25.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -238,7 +238,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -247,7 +247,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> DESERT_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("desert_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -256,7 +256,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> DIRT_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("dirt_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -265,7 +265,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> FOREST_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("forest_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -274,7 +274,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> MESA_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("mesa_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -283,7 +283,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> PLAINS_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("plains_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -292,7 +292,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> RED_DESERT_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("red_desert_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -301,7 +301,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SAVANNA_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("savanna_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -310,7 +310,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SKY_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("sky_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -319,7 +319,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SNOW_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("snow_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -328,7 +328,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> TAIGA_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("taiga_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -337,7 +337,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> WATER_CAMO_OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("water_camo_old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -346,7 +346,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -357,7 +357,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> DESERT_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("desert_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -368,7 +368,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> DIRT_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("dirt_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -379,7 +379,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> FOREST_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("forest_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -390,7 +390,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> MESA_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("mesa_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -401,7 +401,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> PLAINS_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("plains_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -412,7 +412,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> RED_DESERT_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("red_desert_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -423,7 +423,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SAVANNA_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("savanna_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -434,7 +434,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SKY_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("sky_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -445,7 +445,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> SNOW_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("snow_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -456,7 +456,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> TAIGA_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("taiga_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -467,7 +467,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> WATER_CAMO_LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("water_camo_light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 4.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.NETHERITE_BLOCK))
@@ -478,7 +478,7 @@ public class ModBlocks {
 
     public static final BlockEntry<Block> ARMORED_GLASS = CreateArmorBlocksMod.REGISTRATE.block("armored_glass", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(6.0F, 6.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.GLASS))
@@ -489,7 +489,7 @@ public class ModBlocks {
 
     public static final BlockEntry<TrainTrapdoorBlock> ARMORED_TRAPDOOR = CreateArmorBlocksMod.REGISTRATE.block("armored_trapdoor", TrainTrapdoorBlock::new)
             .properties(p -> BlockBehaviour.Properties.copy(Blocks.IRON_TRAPDOOR)
-                    .strength(50.0F, 1200.0F)
+                    .strength(8.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.METAL))
@@ -501,7 +501,7 @@ public class ModBlocks {
             //.properties(p -> p.strength(50.0F, 1200.0F)
             .properties(p -> BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)
                     .noOcclusion()
-                    .strength(50.0f, 1200.0f)
+                    .strength(4.0f, 4.0f)
                     .noCollission()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.CHAIN))
@@ -511,7 +511,7 @@ public class ModBlocks {
 
     public static final BlockEntry<SandBags> SAND_BAGS = CreateArmorBlocksMod.REGISTRATE.block("sand_bags", SandBags::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(4.0F, 8.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.SAND))
@@ -522,14 +522,14 @@ public class ModBlocks {
 
     public static final BlockEntry<TankObstacleTop> TANK_OBSTACLE_TOP = CreateArmorBlocksMod.REGISTRATE.block("tank_obstacle_top", TankObstacleTop::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .noOcclusion())
             .register();
 
     public static final BlockEntry<TankObstacle> TANK_OBSTACLE = CreateArmorBlocksMod.REGISTRATE.block("tank_obstacle", TankObstacle::new)
             .initialProperties(SharedProperties::softMetal)
-            .properties(p -> p.strength(50.0F, 1200.0F)
+            .properties(p -> p.strength(10.0F, 10.0F)
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .noOcclusion()

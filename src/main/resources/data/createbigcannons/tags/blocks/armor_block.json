@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "createarmorblocks:armor_block",
+    "createarmorblocks:desert_camo_armor_block",
+    "createarmorblocks:dirt_camo_armor_block",
+    "createarmorblocks:forest_camo_armor_block",
+    "createarmorblocks:mesa_camo_armor_block",
+    "createarmorblocks:plains_camo_armor_block",
+    "createarmorblocks:red_desert_camo_armor_block",
+    "createarmorblocks:savanna_camo_armor_block",
+    "createarmorblocks:sky_camo_armor_block",
+    "createarmorblocks:snow_camo_armor_block",
+    "createarmorblocks:taiga_camo_armor_block",
+    "createarmorblocks:water_camo_armor_block"
+  ]
+}
