@@ -479,6 +479,7 @@ public class ModBlocks {
     public static final BlockEntry<Block> ARMORED_GLASS = CreateArmorBlocksMod.REGISTRATE.block("armored_glass", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
             .properties(p -> p.strength(6.0F, 6.0F)
+                    .noOcclusion()
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.COLOR_GRAY)
                     .sound(SoundType.GLASS))

@@ -83,7 +83,8 @@
       "name": "bone2",
       "origin": [-0.17286, 10.69439, -1.41421],
       "color": 0,
-      "children": [0, 1, 2]
+      "children": [0, 1, 2, 3, 4, 5, 6]
     }
-  ]
+  ],
+  "render_type": "cutout"
 }
