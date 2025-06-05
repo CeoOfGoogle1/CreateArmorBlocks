@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "GIG",
+    "III",
+    "GIG"
+  ],
+  "result": {
+    "count": 8,
+    "item": "createarmorblocks:armored_glass"
+  },
+  "show_notification": true
+}

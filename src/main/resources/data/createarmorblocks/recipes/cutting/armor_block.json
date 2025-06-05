@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_block"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "count": 8,
+      "item": "createarmorblocks:armor_block"
+    }
+  ]
+}

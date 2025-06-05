@@ -11,6 +11,7 @@ import net.ceoofgoogle.createarmorblocks.block.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.GlassBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -476,7 +477,7 @@ public class ModBlocks {
             .simpleItem()
             .register();
 
-    public static final BlockEntry<Block> ARMORED_GLASS = CreateArmorBlocksMod.REGISTRATE.block("armored_glass", Block::new)
+    public static final BlockEntry<GlassBlock> ARMORED_GLASS = CreateArmorBlocksMod.REGISTRATE.block("armored_glass", GlassBlock::new)
             //  .initialProperties(SharedProperties::softMetal)
             .properties(p -> p.strength(6.0F, 6.0F)
                     .noOcclusion()

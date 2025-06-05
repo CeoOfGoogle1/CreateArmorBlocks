@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:sand"
+    },
+    "G": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "GIG",
+    "III",
+    "GIG"
+  ],
+  "result": {
+    "count": 8,
+    "item": "createarmorblocks:sand_bags"
+  },
+  "show_notification": true
+}
