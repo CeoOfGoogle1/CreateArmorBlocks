@@ -57,7 +57,7 @@ public class ModCreativeModeTabs {
         pOutput.accept(ModBlocks.SNOW_CAMO_HEAVY_ARMOR_BLOCK);
         pOutput.accept(ModBlocks.TAIGA_CAMO_HEAVY_ARMOR_BLOCK);
         pOutput.accept(ModBlocks.WATER_CAMO_HEAVY_ARMOR_BLOCK);
-        pOutput.accept(ModBlocks.OLD_ARMOR_BLOCK);
+        /*pOutput.accept(ModBlocks.OLD_ARMOR_BLOCK);
         pOutput.accept(ModBlocks.DESERT_CAMO_OLD_ARMOR_BLOCK);
         pOutput.accept(ModBlocks.DIRT_CAMO_OLD_ARMOR_BLOCK);
         pOutput.accept(ModBlocks.FOREST_CAMO_OLD_ARMOR_BLOCK);
@@ -68,7 +68,7 @@ public class ModCreativeModeTabs {
         pOutput.accept(ModBlocks.SKY_CAMO_OLD_ARMOR_BLOCK);
         pOutput.accept(ModBlocks.SNOW_CAMO_OLD_ARMOR_BLOCK);
         pOutput.accept(ModBlocks.TAIGA_CAMO_OLD_ARMOR_BLOCK);
-        pOutput.accept(ModBlocks.WATER_CAMO_OLD_ARMOR_BLOCK);
+        pOutput.accept(ModBlocks.WATER_CAMO_OLD_ARMOR_BLOCK);*/
         pOutput.accept(ModBlocks.LIGHT_PLATING);
         pOutput.accept(ModBlocks.DESERT_CAMO_LIGHT_PLATING);
         pOutput.accept(ModBlocks.DIRT_CAMO_LIGHT_PLATING);

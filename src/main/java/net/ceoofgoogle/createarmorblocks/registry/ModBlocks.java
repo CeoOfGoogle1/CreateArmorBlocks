@@ -236,7 +236,7 @@ public class ModBlocks {
                     .sound(SoundType.NETHERITE_BLOCK))
             .simpleItem()
             .register();
-
+/*
     public static final BlockEntry<Block> OLD_ARMOR_BLOCK = CreateArmorBlocksMod.REGISTRATE.block("old_armor_block", Block::new)
             .initialProperties(SharedProperties::softMetal)
             .properties(p -> p.strength(8.0F, 8.0F)
@@ -344,7 +344,7 @@ public class ModBlocks {
                     .sound(SoundType.NETHERITE_BLOCK))
             .simpleItem()
             .register();
-
+*/
     public static final BlockEntry<Block> LIGHT_PLATING = CreateArmorBlocksMod.REGISTRATE.block("light_plating", Block::new)
             //  .initialProperties(SharedProperties::softMetal)
             .properties(p -> p.strength(4.0F, 4.0F)
