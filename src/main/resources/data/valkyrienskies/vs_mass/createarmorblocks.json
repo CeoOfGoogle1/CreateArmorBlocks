@@ -1,0 +1,146 @@
+[
+  {
+    "block": "createarmorblocks:light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:desert_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:desert_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:desert_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:dirt_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:dirt_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:dirt_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:forest_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:forest_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:forest_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:mesa_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:mesa_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:mesa_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:plains_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:plains_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:plains_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:red_desert_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:red_desert_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:red_desert_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:savanna_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:savanna_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:savanna_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:sky_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:sky_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:sky_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:snow_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:snow_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:snow_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:taiga_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:taiga_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:taiga_camo_armor_block",
+    "mass": 500.0
+  },
+  {
+    "block": "createarmorblocks:water_camo_light_plating",
+    "mass": 20.0
+  },
+  {
+    "block": "createarmorblocks:water_camo_heavy_armor_block",
+    "mass": 2000.0
+  },
+  {
+    "block": "createarmorblocks:water_camo_armor_block",
+    "mass": 500.0
+  }
+]
