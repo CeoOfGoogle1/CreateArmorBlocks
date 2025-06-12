@@ -1,7 +1,7 @@
 package net.ceoofgoogle.createarmorblocks.registry;
 
 import com.simibubi.create.AllCreativeModeTabs;
-import com.simibubi.create.foundation.utility.Components;
+
 import net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
@@ -13,6 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 import static net.ceoofgoogle.createarmorblocks.CreateArmorBlocksMod.REGISTRATE;
+import static net.minecraft.network.chat.Component.translatable;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -27,7 +28,7 @@ public class ModCreativeModeTabs {
         CreativeModeTab.Builder tabBuilder = CreativeModeTab.builder()
                 .icon(icon)
                 .displayItems(ModCreativeModeTabs::displayItems)
-                .title(Components.translatable(itemGroupId))
+                .title(translatable(itemGroupId))
                 .withTabsBefore(AllCreativeModeTabs.PALETTES_CREATIVE_TAB.getKey());
         return CREATIVE_MODE_TABS.register(id, tabBuilder::build);
     }

@@ -10,7 +10,7 @@
   "block.createarmorblocks.sky_camo_armor_block": "Sky Camo Armor Block",
   "block.createarmorblocks.snow_camo_armor_block": "Snow Camo Armor Block",
   "block.createarmorblocks.taiga_camo_armor_block": "Taiga Camo Armor Block",
-  "block.createarmorblocks.water_camo_armor_block": "Camo Armor Block",
+  "block.createarmorblocks.water_camo_armor_block": "Water Camo Armor Block",
   "block.createarmorblocks.armored_trapdoor": "Armored Trapdoor",
   "block.createarmorblocks.barbed_wire": "Barbed Wire",
   "block.createarmorblocks.heavy_armor_block": "Heavy Armor Block",
@@ -40,5 +40,5 @@
   "block.createarmorblocks.armored_glass": "Armored Glass",
   "block.createarmorblocks.sand_bags": "Sand Bags",
   "block.createarmorblocks.tank_obstacle": "Tank Obstacle",
-  "itemGroup.createarmorblocks.armor_block": "Create Armor Blocks"
+  "itemGroup.createarmorblocks.armor_block": "Create: Armor Blocks"
 }

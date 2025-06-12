@@ -41,7 +41,7 @@ public class TankObstacleTop extends Block {
 
     @Override
     public boolean propagatesSkylightDown(BlockState state, BlockGetter world, BlockPos pos) {
-        return true; // allow light through
+        return true;
     }
     @Override
     public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
